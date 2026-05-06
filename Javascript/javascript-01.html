@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p id="p1" style="color: blue"></p>
+    <input type="text" id="input1">
+    <button id="bt1">Evento modificar texto</button>
+    <button id="bt2">Evento modifcar color texto</button>
+    <button id="bt3">Boton Fondo azul</button>
+
+
+    <script>
+
+        //document.getElementById("p1").innerText = "texto"
+
+        let parrafo = document.getElementById("p1")
+        let entrada = document.getElementById("input1")
+        let botton = document.getElementById("bt1")
+        let bottonColor = document.getElementById("bt2")
+        let bottonFondo = document.getElementById("bt3")
+
+        botton.addEventListener("click", escribe)
+
+        function escribe(){
+            parrafo.innerText = entrada.value
+            alert ("Parrafo modificado")
+        }
+
+        //funcion anonima
+        bottonColor.addEventListener("click" , function (){
+            parrafo.style.color = entrada.value
+        })
+
+        const x1 = function (){ console.log("Solooooo")}
+        const y1= function (a,b) {return a*b}
+        const x2 = () => console.log("solo 2")
+        const y2= (a,b) => a*b
+
+
+        bottonFondo.addEventListener("click", () =>{
+            parrafo.style.backgroundColor = "blue"
+        }
+    )
+
+    </script>
+    
+</body>
+</html>

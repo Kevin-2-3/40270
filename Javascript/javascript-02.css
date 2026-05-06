@@ -1,0 +1,18 @@
+button {
+    width: 30px;
+    height: 30px;
+}
+
+div{
+    width: 100px;
+    display: fe;
+}
+
+button[id="b0"]{
+    width: 100px;
+}
+
+input[id="resultado"]{
+    width: 40;
+}
+
