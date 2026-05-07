@@ -8,6 +8,19 @@ for (const key in botones){
     }
 }
 
+
+
 function pinta(e){
-   resultado.value += e.target.innerText;
+    let text = e.target.innerText;
+    if (text === "=") {
+        try {
+            resultado.value = eval(resultado.value);
+        } catch {
+            resultado.value = "Error";
+        }
+    } else if (text === "C") {
+        resultado.value = "";
+    } else {
+        resultado.value += text;
+    }
 }
