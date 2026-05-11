@@ -9,7 +9,6 @@ for (const key in botones){
 }
 
 
-
 function pinta(e){
     let text = e.target.innerText;
     if (text === "=") {
