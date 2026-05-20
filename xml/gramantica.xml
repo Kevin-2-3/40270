@@ -1,11 +1,5 @@
 <?xml version="1.0"  encoding="UTF-8"?>
-<!DOCTYPE auto[
-<!ELEMENT auto (modelo, marca, color, placas)>
-<!ELEMENT modelo (#PCDATA)>
-<!ELEMENT marca (#PCDATA)>
-<!ELEMENT color (#PCDATA)>
-<!ELEMENT placas (#PCDATA)>
-]>
+<!DOCTYPE auto SYSTEM "gramatica.dtd">
 
 <auto>
     <modelo>Tsuru</modelo>
