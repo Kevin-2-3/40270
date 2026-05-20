@@ -5,6 +5,7 @@ let cuenta = document.getElementById("cuenta")
 let prms = []
 let operacion
 
+
 for (const key in botones) {
     if (Object.prototype.hasOwnProperty.call(botones, key)) {
         const boton = botones[key];
