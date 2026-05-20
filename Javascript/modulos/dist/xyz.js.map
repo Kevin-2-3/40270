@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../x.js", "../xyz.js"],
+  "sourcesContent": ["function x(params) {\r\n    console.log(\"x\" + params)\r\n    return (\"fin x\")    \r\n}\r\n\r\nexport {x}", "import {x} from \"./x.js\"\r\n\r\nconsole.log(x (\"abc\"))"],
+  "mappings": "MAAA,SAASA,EAAEC,EAAQ,CACf,eAAQ,IAAI,IAAMA,CAAM,EAChB,OACZ,CCDA,QAAQ,IAAIC,EAAG,KAAK,CAAC",
+  "names": ["x", "params", "x"]
+}
